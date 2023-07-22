@@ -3,23 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content=" " />
-    <title>Curso HTML</title>
+    <!-- En la descripción se recomienda que no sean más de 165 caracteres -->
+    <meta
+      name="description"
+      content="En esta página estamos aprendiendo los fundamentos de HTML"
+    />
+    <!-- Se recomienda que el título esté entre los 45 y 55 caracteres de longitud -->
+    <title>Curso HTML - HTML Course</title>
     <link rel="stylesheet" href="../assets/stylesheets/index.css" />
   </head>
   <body>
-    <p id="titulo">Mi primer documento HTML</p>
-    <h2>Atajos de teclado</h2>
+    <h1 id="titulo">Mi primer documento HTML</h1>
+    <h2>Atajos de teclado - Keyboard Shortcuts</h2>
     <ul>
       <li>
         <p>Atajo para hacer comentarios en HTML: ctrl+k+u</p>
-        <!-- Comentarios en HTML -->
       </li>
       <li>
         <p>Atajo para descomentar: ctrl+k+c</p>
       </li>
     </ul>
-    <h2>Enlaces de interés</h2>
+    <hr />
+    <h2>Enlaces de interés - Interesting pages</h2>
     <ul>
       <li>
         <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
@@ -35,5 +40,91 @@
         >
       </li>
     </ul>
+    <hr />
+    <h2>Tabla Periodica HTML</h2>
+    <img
+      src="../assets/img/HTML Periodic Table.jpg"
+      alt="HTML Periodic Table"
+      width="700px"
+    />
+    <hr />
+    <h2>Encabezados en HTML</h2>
+    <h3>
+      Se recomienda tener solo un encabezado de HTML por página/documento HTML
+    </h3>
+    <p>Se tiene desde el encabezado 1 hasta el encabezado 6</p>
+    <hr />
+    <h2>Etiquetas de texto semánticas</h2>
+    <ul>
+      <li><p>Etiqueta de párrafo (p)</p></li>
+      <li><p>Etiqueta mark (resaltado)</p></li>
+      <li><p>Etiqueta b (bold)</p></li>
+      <li><p>Etiquta small</p></li>
+      <li><p>Etiqueta i (itálica)</p></li>
+      <li><p>Etiqueta u (subrayado)</p></li>
+      <li><p>Etiqueta sup (superindice)</p></li>
+      <li><p>Etiqueta sub (subindice)</p></li>
+      <li><p>Etiqueta strong</p></li>
+      <li><p>Etiqueta blockquote</p></li>
+      <li><p>Etiqueta cite (cita)</p></li>
+    </ul>
+    <p>
+      <mark>Lorem</mark> ipsum dolor sit amet consectetur
+      <small>adipisicing elit.</small>
+      <b
+        >Ut eaque recusandae modi, sed enim quis ullam id? Dolorum, consectetur
+        modi.</b
+      ><br />
+      <i>Repellat</i> dicta atque <u>suscipit</u>, distinctio sint quasi dolor
+      voluptatem id. e=mc<sup>2.</sup><br />H<sub>2</sub>O.
+    </p>
+    <p>
+      <strong>Este texto es importante.</strong>
+      <em>Este texto hace énfasis.</em>
+    </p>
+    <blockquote>Yo solo sé que no sé nada.</blockquote>
+    <cite>Sócrates</cite>
+    <hr />
+
+    <h2>Etiquetas de salto</h2>
+    <ul>
+      <li><p>Etiqueta hr (salto semántico)</p></li>
+      <li><p>Etiqueta br (salto de linea simple)</p></li>
+    </ul>
+
+    <h2>Etiqueta de formateo</h2>
+    <p>Respeta la indentación que demos en el código</p>
+    <ul>
+      <li><p>Etiqueta pre (preformateo). Ejemplo:</p></li>
+    </ul>
+    <pre>
+      <p>
+        Tareas por hacer
+        -HTML
+          -Terminar de grbaar las secciones de este Curso
+          -Editar en un solo video
+        -CSS
+          -Comenzar a grabar secciones CSS
+          -Editar en un solo video
+      </p>
+    </pre>
+
+    <ul>
+      <li><p>Etiqueta code. Ejemplo:</p></li>
+    </ul>
+
+    <pre>
+      <p>
+        <code>
+          import React from 'react';
+          import Title from './Title';
+
+          function App {
+            return &lt;Title /&gt;
+          }
+        </code>
+      </p>
+    </pre>
+    <hr />
   </body>
 </html>
