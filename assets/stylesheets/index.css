@@ -4,3 +4,16 @@
   background-color: black;
   font-weight: bold;
 }
+
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  color: red;
+}
+
+img {
+  width: 200px;
+  height: auto;
+}

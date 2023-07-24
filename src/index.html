@@ -39,6 +39,13 @@
           >Caracteres especiales en HTML</a
         >
       </li>
+      <li>
+        <a href="https://css.gg/youtube">´Repo de íconos vectoriales</a>
+      </li>
+
+      <li>
+        <a href="https://www.svgrepo.com/">Repo de íconos vectoriales</a>
+      </li>
     </ul>
     <hr />
     <h2>Tabla Periodica HTML</h2>
@@ -126,5 +133,209 @@
       </p>
     </pre>
     <hr />
+
+    <h2>Etiquetas semánticas</h2>
+    <p>Permiten definir/delimitar zonas de maquetación.</p>
+
+    <ul>
+      <li><p>div</p></li>
+      <li><p>header</p></li>
+      <li><p>main</p></li>
+      <li><p>footer</p></li>
+      <li><p>article</p></li>
+      <li><p>nav</p></li>
+      <li><p>aside</p></li>
+      <li><p>section</p></li>
+      <li><p>addres</p></li>
+    </ul>
+
+    <div>DIV es una etiqueta contenedora que no tiene semántica</div>
+    <header>
+      <p>Permite definir una cabecera de un sitio WEB o una sección</p>
+    </header>
+    <main>
+      <p>
+        Permite definir la sección principal del documento. Solo puede existir
+        una etiqueta main por documento
+      </p>
+    </main>
+    <footer>
+      <p>
+        Representa un pie de página de un sitio web o de una sección del sitio
+      </p>
+    </footer>
+    <nav>
+      <p>Representa un conjunto de enlaces que forme un menú de navegación</p>
+    </nav>
+
+    <article>
+      <p>una sección de autocontenido (que por sí sola se explica)</p>
+    </article>
+
+    <aside><p>Representa contenido complementario o secundario</p></aside>
+
+    <section><p>Representa una sección de contenido genérico</p></section>
+
+    <address><p>Representa una dirección física</p></address>
+
+    <hr />
+
+    <h2>Etiquetas de bloque VS Etiquetas de línea</h2>
+
+    <strong
+      >Una etiqueta de bloque es aquella que genera saltos de línea con sus
+      etiquetas hermanas</strong
+    >
+    <br />
+    <strong
+      >Una etiqueta de línea es aquella que solo ocupa el espacio necesario que
+      tiene su contenido.</strong
+    >
+    <p>La etiqueta de bloque por excelencia es DIV</p>
+    <div style="background-color: bisque">Etiqueta DIV</div>
+    <p>La etiqueta de línea por excelencia es span.</p>
+    <span style="background-color: blueviolet; color: cornsilk"
+      >Etiqueta span</span
+    >
+    <span>Soy otra etiqueta span</span>
+
+    <hr />
+
+    <h2>Formas de insertar código CSS en un documento HTML</h2>
+
+    <ul>
+      <li>
+        <p>En la misma etiqueta con el atributo style (no recomendado)</p>
+      </li>
+      <li>
+        <p>
+          Con una hoja de estilos a parte e insetándola con la etiqueta link en
+          la cabecera de la página
+        </p>
+      </li>
+      <li>
+        <p>Con la etiqueta style (de preferencia en la cabecera)</p>
+      </li>
+    </ul>
+
+    <hr />
+
+    <h2>Formas de insertar código JavaScript en un documento HTML</h2>
+
+    <ul>
+      <li>
+        <p>
+          Con la etiqueta script al final del documento antes del cierre de la
+          etiqueta body
+        </p>
+      </li>
+      <li>
+        <p>
+          Con una hoja de scripts a parte y utilizando la etiqueta scripts con
+          el atributo src y poniendo la ruta donde se encuentra la hoja
+        </p>
+      </li>
+    </ul>
+
+    <hr />
+
+    <h2>Imágenes en HTML</h2>
+
+    <p>Para insertar imágenes en HTML se utiliza la etiqueta img:</p>
+    <p>
+      el atributo alt es para que se muestre un texto alternativo en caso de que
+      la imagen no pueda mostrarse por alguna razón
+    </p>
+    <img src="../assets/img/Kyoto forest.jpg" alt="Bosque de kioto" />
+    <img src="../assets/img/homero indignado.gif" alt="Juumm" />
+    <img src="../assets/img/Apple_logo_black.svg.png" alt="Apple logo" />
+
+    <hr />
+
+    <h2>Vectores en HTML</h2>
+
+    <p>
+      Se pueden insertar los íconos y recursos vectoriales de manera directa
+      poniendo su código en el código HTML y utilizando el atributo src de la
+      etiqueta img:
+    </p>
+
+    <img src="../assets/img/imagen.svg" alt="logo de YT" />
+
+    <hr />
+
+    <h2>Figuras en HTML</h2>
+    <figcaption>Tabla periódica de los elementos HTML</figcaption>
+    <figure>
+      <img
+        src="../assets/img/HTML Periodic Table.jpg"
+        alt="Tabla periódice de los elementos HTML"
+      />
+    </figure>
+
+    <hr />
+
+    <h2>Listas</h2>
+
+    <h3>Listas ordenadas</h3>
+
+    <p>Lista que enumera los elementos que se inserten en la misma:</p>
+
+    <ol start="3">
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+
+    <ol reversed>
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+
+    <ol type="A">
+      <li>Primavera</li>
+      <li>Verano</li>
+      <li>Otoño</li>
+      <li>Invierno</li>
+    </ol>
+
+    <h3>Listas desordenadas</h3>
+
+    <ul type="square">
+      <li>Ir a trabajar</li>
+      <li>Seguir estudiando frontend</li>
+      <li>Entrenar baile</li>
+      <li>No rendirme nunca</li>
+    </ul>
+
+    <ul type="circle">
+      <li>Ir a trabajar</li>
+      <li>Seguir estudiando frontend</li>
+      <li>Entrenar baile</li>
+      <li>No rendirme nunca</li>
+    </ul>
+
+    <ul>
+      <li>Ir a trabajar</li>
+      <li>Seguir estudiando frontend</li>
+      <li>Entrenar baile</li>
+      <li>No rendirme nunca</li>
+    </ul>
+
+    <h3>Listas de definición</h3>
+
+    <dl>
+      <dt>HTML:</dt>
+      <dd>Lenguaje de marcado que define el contenido de la WEB</dd>
+
+      <dt>CSS:</dt>
+      <dd>Lenguaje de definición que da estilos al código HTML</dd>
+
+      <dt>Javascript:</dt>
+      <dd>Lenguaje que da interactividad en la WEB</dd>
+    </dl>
   </body>
 </html>
