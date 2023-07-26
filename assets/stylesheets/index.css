@@ -1,4 +1,4 @@
-#titulo {
+#inicio {
   text-align: center;
   color: cornsilk;
   background-color: black;
@@ -10,10 +10,10 @@ body {
 }
 
 h2 {
-  color: red;
+  color: blueviolet;
 }
 
 img {
-  width: 200px;
+  width: 210px;
   height: auto;
 }

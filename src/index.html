@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../assets/stylesheets/index.css" />
   </head>
   <body>
-    <h1 id="titulo">Mi primer documento HTML</h1>
+    <h1 id="inicio">Mi primer documento HTML</h1>
     <h2>Atajos de teclado - Keyboard Shortcuts</h2>
     <ul>
       <li>
@@ -40,7 +40,7 @@
         >
       </li>
       <li>
-        <a href="https://css.gg/youtube">´Repo de íconos vectoriales</a>
+        <a href="https://css.gg/youtube">Repo de íconos vectoriales</a>
       </li>
 
       <li>
@@ -48,6 +48,32 @@
       </li>
     </ul>
     <hr />
+
+    <h2>Temario</h2>
+    <ul>
+      <li><a href="#html_headings" id="">Encabezados en HTML</a></li>
+      <li>
+        <a href="#text_semantic_tags" id="">Etiquetas de texto semánticas</a>
+      </li>
+      <li><a href="#jump_tags">Etiquetas de salto</a></li>
+      <li><a href="#formatting_tags">Etiquetas de formateo</a></li>
+      <li><a href="#semantic_tags">Etiquetas semánticas</a></li>
+      <li>
+        <a href="#block_and_line_tags"
+          >Etiquetas de bloque y etiquetas de línea</a
+        >
+      </li>
+      <li><a href="#css_code_in_html">Cómo insertar código CSS en HTML</a></li>
+      <li>
+        <a href="#js_code_in_html">Cómo insertar código JavaScript en HTML</a>
+      </li>
+      <li><a href="#html_images">Imagenes en HTML</a></li>
+      <li><a href="#vectors_in_html">Vectores en HTML</a></li>
+      <li><a href="#figures_in_html">Figuras en HTML</a></li>
+      <li><a href="#html_listings">Listas en HTML</a></li>
+      <li><a href="#html_tables">Tablas en HTML</a></li>
+      <li><a href="#html_anchors">Enlaces en HTML</a></li>
+    </ul>
     <h2>Tabla Periodica HTML</h2>
     <img
       src="../assets/img/HTML Periodic Table.jpg"
@@ -55,13 +81,13 @@
       width="700px"
     />
     <hr />
-    <h2>Encabezados en HTML</h2>
+    <h2 id="html_headings">Encabezados en HTML</h2>
     <h3>
       Se recomienda tener solo un encabezado de HTML por página/documento HTML
     </h3>
     <p>Se tiene desde el encabezado 1 hasta el encabezado 6</p>
     <hr />
-    <h2>Etiquetas de texto semánticas</h2>
+    <h2 id="text_semantic_tags">Etiquetas de texto semánticas</h2>
     <ul>
       <li><p>Etiqueta de párrafo (p)</p></li>
       <li><p>Etiqueta mark (resaltado)</p></li>
@@ -93,13 +119,14 @@
     <cite>Sócrates</cite>
     <hr />
 
-    <h2>Etiquetas de salto</h2>
+    <h2 id="jump_tags">Etiquetas de salto</h2>
     <ul>
       <li><p>Etiqueta hr (salto semántico)</p></li>
       <li><p>Etiqueta br (salto de linea simple)</p></li>
     </ul>
+    <hr />
 
-    <h2>Etiqueta de formateo</h2>
+    <h2 id="formatting_tags">Etiqueta de formateo</h2>
     <p>Respeta la indentación que demos en el código</p>
     <ul>
       <li><p>Etiqueta pre (preformateo). Ejemplo:</p></li>
@@ -134,7 +161,7 @@
     </pre>
     <hr />
 
-    <h2>Etiquetas semánticas</h2>
+    <h2 id="semantic_tags">Etiquetas semánticas</h2>
     <p>Permiten definir/delimitar zonas de maquetación.</p>
 
     <ul>
@@ -180,7 +207,7 @@
 
     <hr />
 
-    <h2>Etiquetas de bloque VS Etiquetas de línea</h2>
+    <h2 id="block_and_line_tags">Etiquetas de bloque VS Etiquetas de línea</h2>
 
     <strong
       >Una etiqueta de bloque es aquella que genera saltos de línea con sus
@@ -201,7 +228,9 @@
 
     <hr />
 
-    <h2>Formas de insertar código CSS en un documento HTML</h2>
+    <h2 id="css_code_in_html">
+      Formas de insertar código CSS en un documento HTML
+    </h2>
 
     <ul>
       <li>
@@ -220,7 +249,9 @@
 
     <hr />
 
-    <h2>Formas de insertar código JavaScript en un documento HTML</h2>
+    <h2 id="js_in_html">
+      Formas de insertar código JavaScript en un documento HTML
+    </h2>
 
     <ul>
       <li>
@@ -239,7 +270,7 @@
 
     <hr />
 
-    <h2>Imágenes en HTML</h2>
+    <h2 id="html_images">Imágenes en HTML</h2>
 
     <p>Para insertar imágenes en HTML se utiliza la etiqueta img:</p>
     <p>
@@ -252,7 +283,7 @@
 
     <hr />
 
-    <h2>Vectores en HTML</h2>
+    <h2 id="vectors_in_html">Vectores en HTML</h2>
 
     <p>
       Se pueden insertar los íconos y recursos vectoriales de manera directa
@@ -264,7 +295,7 @@
 
     <hr />
 
-    <h2>Figuras en HTML</h2>
+    <h2 id="figures_in_html">Figuras en HTML</h2>
     <figcaption>Tabla periódica de los elementos HTML</figcaption>
     <figure>
       <img
@@ -275,7 +306,7 @@
 
     <hr />
 
-    <h2>Listas</h2>
+    <h2 id="html_listings">Listas</h2>
 
     <h3>Listas ordenadas</h3>
 
@@ -337,5 +368,107 @@
       <dt>Javascript:</dt>
       <dd>Lenguaje que da interactividad en la WEB</dd>
     </dl>
+
+    <hr />
+
+    <h2 id="html_tables">Tablas</h2>
+
+    <table>
+      <tr>
+        <td>Nombre</td>
+        <td>Constelación</td>
+        <td>Tipo</td>
+      </tr>
+      <tr>
+        <td>Ikki</td>
+        <td>Fénix</td>
+        <td>Bronce</td>
+      </tr>
+
+      <tr>
+        <td>Shaina</td>
+        <td>Ofiuco</td>
+        <td>Plata</td>
+      </tr>
+
+      <tr>
+        <td>Saga</td>
+        <td>Géminis</td>
+        <td>Dorado</td>
+      </tr>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="3">Tabla de los santos de Athena</th>
+        </tr>
+        <th>Nombre</th>
+        <th>Constelación</th>
+        <th>Tipo armadura</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ikki</td>
+          <td>Fénix</td>
+          <td>Bronce</td>
+        </tr>
+
+        <tr>
+          <td>Mistry</td>
+          <td>Lagarto</td>
+          <td>Plata</td>
+        </tr>
+
+        <tr>
+          <td>Saga</td>
+          <td>Géminis</td>
+          <td>Dorado</td>
+        </tr>
+
+        <tr>
+          <td>Shaina</td>
+          <td rowspan="2">Ofiuco</td>
+          <td>Plata</td>
+        </tr>
+
+        <tr>
+          <td>Odiseo</td>
+          <td>Dorado</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <th colspan="3">
+            <small>Saint Seiya fue creado por Masami Kurumada</small>
+          </th>
+        </tr>
+      </tfoot>
+    </table>
+    <hr />
+
+    <h2 id="html_anchors">Enlaces</h2>
+    <h3>Enlaces externos</h3>
+    <p>Etiqueta para enlaces: a</p>
+
+    <a href="./index2.html">Index 2</a>
+    <br />
+    <a
+      href="https://jonmircha.com/"
+      target="_blank"
+      rel="nofollow noopener noreferrer"
+      >Página JonMircha</a
+    >
+
+    <h3>Enlaces internos</h3>
+    <strong
+      >Para poner enlaces internos, lo único que debe de hacerse es poner el
+      identificador al cuál se desea navegar en el atributo href de la etiqueta
+      a</strong
+    >
+
+    <hr />
+    <a href="#inicio">Ir al inicio ⬆️</a>
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
   </body>
 </html>
