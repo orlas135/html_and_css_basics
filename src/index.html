@@ -80,6 +80,7 @@
       <li><a href="#html_tables">Tablas en HTML</a></li>
       <li><a href="#html_anchors">Enlaces en HTML</a></li>
       <li><a href="#elementos_interactivos">Elementos interactivos</a></li>
+      <li><a href="#iframe">iFrames</a></li>
     </ul>
     <h2>Tabla Periodica HTML</h2>
     <img
@@ -556,6 +557,59 @@
     <hr />
 
     <h2 id="audio_video">Audio y video</h2>
+
+    <audio src="../assets/media/Unfound-Reach.mp3" controls preload></audio>
+    <br />
+    <video src="../assets/media/Video pendiente.mp4" controls preload></video>
+
+    <hr />
+
+    <h2 id="iframes">iFrames</h2>
+    <strong
+      >No es recomendable tener más de un iFrame por documento HTML</strong
+    >
+    <br />
+    <iframe
+      src="../keyboard-vscode-shortcuts-windows.pdf"
+      frameborder="0"
+      name="emmet"
+      title="Emmet shortcuts"
+    ></iframe>
+    <hr />
+    <h2>Formularios</h2>
+    <strong>
+      El atributo for del label se vincula con el ID del elemento de formulario
+      que esté con el mismo ID</strong
+    >
+    <form action="#" method="">
+      <label for="name">Nombre</label>
+      <input type="text" name="name" id="" placeholder="Ingresa tu nombre" />
+      <br /><br />
+
+      <label for="fechaNacimiento"></label>
+      <input type="date" title="fechanacimiento" name="fechaNacimiento" id="" />
+
+      <br /><br />
+
+      <label for="color">Color</label>
+      <input type="color" title="colorletra" name="color" id="" />
+
+      <br /><br />
+      <input type="file" name="" title="documentoidentidad" id="" multiple />
+
+      <br /><br />
+
+      <label for="estudiante">Estudiante</label>
+      <input type="checkbox" title="estudiante" name="estudiante" id="" />
+      <br />
+      <label for="Sexo">Sexo</label>
+      <input type="radio" n ame="sexo" id="" title="sexo" value="M" />M
+      <input type="radio" name="sexo" id="" title="sexo" value="F" />F
+
+      <br /><br />
+      <input type="reset" value="Limpiar" />
+      <input type="submit" value="Enviar" />
+    </form>
     <hr />
     <a href="#inicio">Ir al inicio ⬆️</a>
 
