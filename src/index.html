@@ -11,6 +11,29 @@
     <!-- Se recomienda que el título esté entre los 45 y 55 caracteres de longitud -->
     <title>Curso HTML - HTML Course</title>
     <link rel="stylesheet" href="../assets/stylesheets/index.css" />
+    <link rel="canonical" href="https://tudominio.com/index.html" />
+    <link rel="icon" href="../assets/img/Apple_logo_black.svg.png" />
+    <link
+      rel="apple-touch-icon"
+      href="../assets/img/Apple_logo_black.svg.png"
+    />
+
+    <meta name="theme-color" content="#FF0MFU" />
+
+    <meta property="og:title" content="Curso HTML - HTML Course" />
+    <meta
+      property="og:description"
+      content="En esta página estamos aprendiendo los fundamentos de HTML"
+    />
+    <!-- poner ruta absoulta y no relativa -->
+    <meta
+      property="og:image"
+      content="https://tudominio.com/assets/img/HTML Periodic Table.jpg"
+    />
+    <meta property="og:url" content="https://tudominio.com/index.html" />
+
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@led_Zzepelin" />
   </head>
   <body>
     <h1 id="inicio">Mi primer documento HTML</h1>
@@ -52,6 +75,8 @@
       </li>
 
       <li><a href="https://caniuse.com/">Can i use</a></li>
+
+      <li><a href="https://formsubmit.co">Form Submit</a></li>
     </ul>
     <hr />
 
@@ -81,6 +106,11 @@
       <li><a href="#html_anchors">Enlaces en HTML</a></li>
       <li><a href="#elementos_interactivos">Elementos interactivos</a></li>
       <li><a href="#iframe">iFrames</a></li>
+      <li><a href="formularios">Formularios</a></li>
+      <li><a href="formulario_contacto">Formulario de contacto</a></li>
+      <li><a href="data_atributtes">Data Atributtes</a></li>
+      <li><a href="seo_moviles">Meta etiquetas para SEO y móviles</a></li>
+      <li><a href="metaetiquetas_redes">Meta etiquetas para RR.SS</a></li>
     </ul>
     <h2>Tabla Periodica HTML</h2>
     <img
@@ -576,10 +606,19 @@
       title="Emmet shortcuts"
     ></iframe>
     <hr />
-    <h2>Formularios</h2>
+    <h2 id="formularios">Formularios</h2>
     <strong>
       El atributo for del label se vincula con el ID del elemento de formulario
       que esté con el mismo ID</strong
+    >
+    <strong
+      >El atributo title de cada etiqueta sirve para mostrar un mensaje en caso
+      de que el usuario cometa un error al llenarlo</strong
+    >
+
+    <strong
+      >El atributo name es la variable que se va a enviar al servidor cuando el
+      usuario envíe el forulario</strong
     >
     <form action="#" method="">
       <label for="name">Nombre</label>
@@ -610,6 +649,71 @@
       <input type="reset" value="Limpiar" />
       <input type="submit" value="Enviar" />
     </form>
+    <hr />
+
+    <h2 id="formulario_contacto">Formulario de contacto</h2>
+
+    <form action="https://formsubmit.co/alexorlas96@gmail.com" method="post">
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Escribe tu nombre"
+        pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$"
+        title="Solo se aceptan letras, números y espacios en blanco"
+      />
+      <br />
+      <input
+        type="email"
+        name="correo"
+        placeholder="Escribe tu correo electrónico"
+        pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$"
+        required
+        title="Formato de correo inválido"
+      />
+      <br />
+      <label for="comentarios"></label>
+      <textarea
+        name="comentarios"
+        cols="30"
+        rows="10"
+        required
+        placeholder="Escribe tus comentarios"
+      ></textarea>
+      <br />
+      <input type="reset" value="Limpiar" />
+      <input type="submit" value="Enviar" />
+    </form>
+
+    <hr />
+
+    <h2 id="data_atributtes">Data Atributtes</h2>
+
+    <p>Ver video:</p>
+
+    <a
+      href="https://www.youtube.com/watch?v=l6npGZa_vgc&list=PLvq-jIkSeTUZ6QgYYO3MwG9EMqC-KoLXA&index=2&ab_channel=jonmircha"
+      >DOM y Data Atributtes</a
+    >
+    <ul>
+      <li data-id="1" data-name="summer">Verano</li>
+      <li data-id="2" data-name="spring">Primevara</li>
+      <li data-id="3" data-name="autumn">Otoño</li>
+      <li data-id="4" data-name="winter">Invierno</li>
+    </ul>
+    <hr />
+
+    <h2 id="seo_moviles">Metaetiquetas para SEO y Móviles</h2>
+    <ul>
+      <li>link rel canonical</li>
+      <li>favicon</li>
+      <li>apple touch icon</li>
+      <li>meta theme color</li>
+    </ul>
+
+    <hr />
+
+    <h2 id="metaetiquetas_redes">Metaetiquetas para redes sociales</h2>
+
     <hr />
     <a href="#inicio">Ir al inicio ⬆️</a>
 
